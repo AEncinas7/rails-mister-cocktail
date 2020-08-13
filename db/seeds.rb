@@ -22,13 +22,5 @@ puts "Generating cocktails..."
   cocktail.save!
 end
 
-# puts "Generating doses..."
-# 10.times do 
-#   dose = Dose.new(
-#     description: Faker::Lorem.sentence 
-#   )
-#   dose.save!
-# end
-
 puts "Finished!"
 

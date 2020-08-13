@@ -1,12 +1,18 @@
-.navbar-lewagon {
+.navbar-yolo {
   justify-content: space-between;
-  background: white;
+  background: rgb(14, 14, 14);
+  .navbar-brand {
+    color: #6a040f;
+    &:hover {
+      color: #9d0208;
+    }
+  }
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-yolo .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar-yolo .navbar-brand img {
   width: 40px;
 }

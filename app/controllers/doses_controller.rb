@@ -12,7 +12,7 @@ class DosesController < ApplicationController
   end
 
   def destroy
-    # PARAMS: {"id"=>"11"}
+    # PARAMS: {"id"=>"1"}
     @dose = Dose.find(params[:id])
     @dose.destroy
     redirect_to cocktail_path(@dose.cocktail)

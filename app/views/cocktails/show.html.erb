@@ -6,7 +6,7 @@
   <ul>
     <% @cocktail.doses.each do |dose| %>
       <li>
-        <%= dose.description %> | <%= dose.ingredient_id %> -- <%= link_to dose_path(dose), method: :delete, data: { confirm: "Delete this dose?" } do %>
+        <%= dose.description %> | <%= dose.ingredient["name"] %> -- <%= link_to dose_path(dose), method: :delete, data: { confirm: "Delete this dose?" } do %>
           <i class="fas fa-trash-alt"></i>
         <% end %>
       </li>
@@ -19,5 +19,3 @@
   <%= f.association :ingredient %>
   <%= f.button :submit %>
 <% end %>
-
-<p><%= link_to "Back to list", cocktails_path %></p>

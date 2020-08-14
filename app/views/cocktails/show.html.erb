@@ -1,5 +1,5 @@
 <h1><%= @cocktail.name %></h1>
-
+<div class="cocktail-pic"><%= cl_image_tag @cocktail.photo.key, width: 400, quality: 100 %></div>
 <% if @cocktail.doses == [] %>
   <p> No doses yet...</p>
 <% else %>
